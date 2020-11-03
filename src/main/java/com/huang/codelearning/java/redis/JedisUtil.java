@@ -32,9 +32,8 @@ public class JedisUtil {
 
 
     /**
-     * 获取jedis
-     *
-     * @return
+     * @description fjdasl;
+     * @return Jedis constructor
      */
     public static Jedis getJedis() {
         Jedis jedis = jedisPool.getResource();
@@ -45,7 +44,7 @@ public class JedisUtil {
     /**
      * jedis放回连接池
      *
-     * @param jedis
+     * @param jedis jedis
      */
     public static void close(Jedis jedis) {
         //从源码可以分析得到，如果是使用连接池的形式，这个并非真正的close,而是把连接放回连接池中
@@ -55,10 +54,9 @@ public class JedisUtil {
     }
 
     /**
-     * get
-     *
-     * @param key
-     * @return
+     * @description fad
+     * @param key key
+     * @return faddy
      */
     public static String get(String key) {
         Jedis jedis = null;
@@ -76,9 +74,8 @@ public class JedisUtil {
     /**
      * set
      *
-     * @param key
-     * @param value
-     * @return
+     * @param key key
+     * @param value value
      */
     public static void set(String key, String value) {
         Jedis jedis = null;
@@ -93,14 +90,6 @@ public class JedisUtil {
         }
     }
 
-    /**
-     * set with expire milliseconds
-     *
-     * @param key
-     * @param value
-     * @param seconds
-     * @return
-     */
     public static void set(String key, String value, long seconds) {
         Jedis jedis = null;
         try {
@@ -262,8 +251,8 @@ public class JedisUtil {
 
     /**
      * 获取key过期时间 -1表示永久 -2表示该key不存在
-     * @param key
-     * @return
+     * @param key key
+     * @return 过期时间
      */
     public static long ttl(String key) {
         Jedis jedis = null;

@@ -1,13 +1,16 @@
 package com.huang.codelearning.scala.utils
 
 /**
- * @Description:
- * @Author: huangshibo
- * @Date: 2020/10/12 19:30
+ * scala utils
  */
 object Utils {
 
-  def test() : Unit = {
+  /**
+   * @description
+   * @param
+   * @return
+   */
+  def test(in : String) : Unit = {
     println("scala utils")
   }
 

@@ -38,7 +38,7 @@
     </appender>
 
     <!-- 将上面两个 appender 关联到我们的项目 -->
-    <logger name="com.huang.codelearning" level="debug" additivity="false"> <!-- name 是项目包名，为了方便调试，输出 DEBUG 级别及其以上的log -->
+    <logger name="com.huang.codelearning" level="info" additivity="false"> <!-- name 是项目包名，为了方便调试，输出 DEBUG 级别及其以上的log -->
         <appender-ref ref="console"/>
         <appender-ref ref="file" />
     </logger>
@@ -50,8 +50,8 @@
     <!-- 日志级别 -->
     <root>
         <!-- 定义了ERROR和INFO级别的日志，分别在FILE文件和控制台输出 -->
-        <level value="error" />
-        <level value="error" />
+        <level value="info" />
+        <level value="info" />
         <appender-ref ref="file" />
         <appender-ref ref="console" />
     </root>
